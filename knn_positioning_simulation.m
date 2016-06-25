@@ -18,7 +18,7 @@ for i=1:size(p_true);   %按顺序分别给每一个数据定位
     distance = sqrt(distance);
     %将欧氏距离排序，选择k个最小的，得到位置
     d = reshape(distance,1,size_x*size_y);
-    [whatever, index_d]=sort(d);
+    [~, index_d]=sort(d);
     knn_x = (mod(index_d(1:k),size_x));
     knn_y = (floor(index_d(1:k)./size_x)+1);
     p_KNN(i,1:2) = [mean(knn_x), mean(knn_y)];%k个位置求平均
@@ -42,3 +42,5 @@ disp(mean(error_KNN));
 %另外所谓的WKNN（求k个位置平均的时候使用加权平均），改善效果忽略不计
 %除了欧氏距离，我们也可以用其他的距离（曼哈顿距离啊什么的）
 %这种算法本身没有一个严格的证明来反映定位精度，所有各种参数随便调，各种细节也能随便改，相要深入研究指纹法的话去看概率方法吧。
+
+%自己实现kNN的话，可以根据实际情况对里面的细节做一些改进，比如AP的选择...，如果只是做一个knn分类器，matlab有自带的工具包
