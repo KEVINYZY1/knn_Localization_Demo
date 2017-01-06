@@ -1,3 +1,7 @@
+**重新整理了定位相关代码，位置指纹法可参考：[http://www.cnblogs.com/rubbninja/p/6134481.html](http://www.cnblogs.com/rubbninja/p/6134481.html)**
+
+**对应的Github地址：[https://github.com/jiangqideng/codeInBlogs](https://github.com/jiangqideng/codeInBlogs)**
+
 ##一个精简的knn定位算法（包含数据集，可直接运行）
 
 ###文件说明
