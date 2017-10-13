@@ -2,15 +2,15 @@
 
 **对应的Github地址：[https://github.com/jiangqideng/codeInBlogs](https://github.com/jiangqideng/codeInBlogs)**
 
-##一个精简的knn定位算法（包含数据集，可直接运行）
+## 一个精简的knn定位算法（包含数据集，可直接运行）
 
-###文件说明
+### 文件说明
 |文件|说明 |
 |---|---|
 |data.mat|数据集|
 knn_positioning_simulation.m|算法代码|
 
-###使用说明
+### 使用说明
 在matlab里，将这两个文件放入同一个文件夹中，运行nn_positioning_simulation。
 
 运行结果如图：![](https://raw.githubusercontent.com/jiangqideng/resources/master/knn_positioning_simulation.jpg)
@@ -18,7 +18,7 @@ knn_positioning_simulation.m|算法代码|
 
 命令行显示KNN平均误差。
 
-###Q&A
+### Q&A
 
 + 请问楼主建立RM的20\*15的空间是怎么分布的，是空旷的空间？还是哪儿有墙体
 
